@@ -4,22 +4,22 @@ package ModelosDTO;
  *
  * @author edgar
  */
-public class Farmaceutico {
+public class Ciudad {
 
-    private int idCiudad;
+    private int IdCiudad;
     private String nombre;
 
-    public Farmaceutico(int idCiudad, String nombre) {
-        this.idCiudad = idCiudad;
+    public Ciudad(int IdCiudad, String nombre) {
+        this.IdCiudad = IdCiudad;
         this.nombre = nombre;
     }
 
     public int getIdCiudad() {
-        return idCiudad;
+        return IdCiudad;
     }
 
-    public void setIdCiudad(int idCiudad) {
-        this.idCiudad = idCiudad;
+    public void setIdCiudad(int IdCiudad) {
+        this.IdCiudad = IdCiudad;
     }
 
     public String getNombre() {
