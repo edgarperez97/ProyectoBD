@@ -15,12 +15,12 @@ import java.util.logging.Logger;
  *
  * @author edgar
  */
-public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
+public class LaboratorioDAOImp implements MetodosCRUD<Laboratorio> {
 
     private final String SQL_CREAR = "INSERT INTO Laboratorio(IDLABORATORIO,NOMBRE) VALUES (?,?)";
     private final String SQL_ELIMINAR = "DELETE FROM Laboratorio WHERE IDLABORATORIO = ?";
     private final String SQL_ACTUALIZAR = "UPDATE Laboratorio SET NOMBRE = ? WHERE IDLABORATORIO = ?";
-    private final String SQL_LEERPORARGUMENTO = "";
+    private final String SQL_LEERPORARGUMENTO = "SELECT * FROM Laboratorio WHERE IDLABORATORIO = ?";
     private final String SQL_LEERTODO = "SELECT * FROM Laboratorio";
 
     private static final Conexion con = Conexion.getInstance();
@@ -86,7 +86,8 @@ public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
         try {
             ps = con.getConexion().prepareStatement(SQL_ACTUALIZAR);
             ps.setInt(1, c.getIdLaboratorio());
-
+            ps.setString(2, c.getNombre());
+            
             if (ps.executeUpdate() > 0) {
                 return true;
             }
@@ -99,7 +100,7 @@ public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
                 try {
                     ps.close();
                 } catch (SQLException ex) {
-                    Logger.getLogger(LaboratorioDAO.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(LaboratorioDAOImp.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }
@@ -125,7 +126,7 @@ public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
                     ps.close();
                     res.close();
                 } catch (SQLException ex) {
-                    Logger.getLogger(LaboratorioDAO.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(LaboratorioDAOImp.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }
