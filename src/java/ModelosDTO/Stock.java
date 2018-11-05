@@ -6,32 +6,32 @@ package ModelosDTO;
  */
 public class Stock {
 
-    private int IdFarmacia;
-    private int IdMedicamento;
+    private int idFarmacia;
+    private int idMedicamento;
     private int cantidad;
     private double precio;
 
-    public Stock(int IdFarmacia, int IdMedicamento, int cantidad, double precio) {
-        this.IdFarmacia = IdFarmacia;
-        this.IdMedicamento = IdMedicamento;
+    public Stock(int idFarmacia, int idMedicamento, int cantidad, double precio) {
+        this.idFarmacia = idFarmacia;
+        this.idMedicamento = idMedicamento;
         this.cantidad = cantidad;
         this.precio = precio;
     }
 
     public int getIdFarmacia() {
-        return IdFarmacia;
+        return idFarmacia;
     }
 
-    public void setIdFarmacia(int IdFarmacia) {
-        this.IdFarmacia = IdFarmacia;
+    public void setIdFarmacia(int idFarmacia) {
+        this.idFarmacia = idFarmacia;
     }
 
     public int getIdMedicamento() {
-        return IdMedicamento;
+        return idMedicamento;
     }
 
-    public void setIdMedicamento(int IdMedicamento) {
-        this.IdMedicamento = IdMedicamento;
+    public void setIdMedicamento(int idMedicamento) {
+        this.idMedicamento = idMedicamento;
     }
 
     public int getCantidad() {

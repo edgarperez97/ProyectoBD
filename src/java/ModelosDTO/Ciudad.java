@@ -6,20 +6,20 @@ package ModelosDTO;
  */
 public class Ciudad {
 
-    private int IdCiudad;
+    private int idCiudad;
     private String nombre;
 
-    public Ciudad(int IdCiudad, String nombre) {
-        this.IdCiudad = IdCiudad;
+    public Ciudad(int idCiudad, String nombre) {
+        this.idCiudad = idCiudad;
         this.nombre = nombre;
     }
 
     public int getIdCiudad() {
-        return IdCiudad;
+        return idCiudad;
     }
 
-    public void setIdCiudad(int IdCiudad) {
-        this.IdCiudad = IdCiudad;
+    public void setIdCiudad(int idCiudad) {
+        this.idCiudad = idCiudad;
     }
 
     public String getNombre() {

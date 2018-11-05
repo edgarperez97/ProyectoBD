@@ -6,30 +6,30 @@ package ModelosDTO;
  */
 public class Farmacia {
 
-    private int IdFarmacia;
-    private int IdCiudad;
+    private int idFarmacia;
+    private int idCiudad;
     private String nombre;
 
-    public Farmacia(int IdFarmacia, int IdCiudad, String nombre) {
-        this.IdFarmacia = IdFarmacia;
-        this.IdCiudad = IdCiudad;
+    public Farmacia(int idFarmacia, int idCiudad, String nombre) {
+        this.idFarmacia = idFarmacia;
+        this.idCiudad = idCiudad;
         this.nombre = nombre;
     }
 
     public int getIdFarmacia() {
-        return IdFarmacia;
+        return idFarmacia;
     }
 
-    public void setIdFarmacia(int IdFarmacia) {
-        this.IdFarmacia = IdFarmacia;
+    public void setIdFarmacia(int idFarmacia) {
+        this.idFarmacia = idFarmacia;
     }
 
     public int getIdCiudad() {
-        return IdCiudad;
+        return idCiudad;
     }
 
-    public void setIdCiudad(int IdCiudad) {
-        this.IdCiudad = IdCiudad;
+    public void setIdCiudad(int idCiudad) {
+        this.idCiudad = idCiudad;
     }
 
     public String getNombre() {
