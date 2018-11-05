@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -17,9 +19,9 @@ public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
 
     private final String SQL_CREAR = "INSERT INTO Laboratorio(IDLABORATORIO,NOMBRE) VALUES (?,?)";
     private final String SQL_ELIMINAR = "DELETE FROM Laboratorio WHERE IDLABORATORIO = ?";
-    private final String SQL_ACTUALIZAR = "";
+    private final String SQL_ACTUALIZAR = "UPDATE Laboratorio SET NOMBRE = ? WHERE IDLABORATORIO = ?";
     private final String SQL_LEERPORARGUMENTO = "";
-    private final String SQL_LEERTODO = "";
+    private final String SQL_LEERTODO = "SELECT * FROM Laboratorio";
 
     private static final Conexion con = Conexion.getInstance();
 
@@ -80,12 +82,54 @@ public class LaboratorioDAO implements MetodosCRUD<Laboratorio> {
 
     @Override
     public boolean actualizar(Laboratorio c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        PreparedStatement ps = null;
+        try {
+            ps = con.getConexion().prepareStatement(SQL_ACTUALIZAR);
+            ps.setInt(1, c.getIdLaboratorio());
+
+            if (ps.executeUpdate() > 0) {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.getMessage();
+        } finally {
+            con.cerrarConexion();
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(LaboratorioDAO.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+
+        return false;
     }
 
     @Override
     public Laboratorio leer(Object key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Laboratorio lab = null;
+        PreparedStatement ps = null;
+        ResultSet res = null;
+
+        try {
+            ps = con.getConexion().prepareStatement(SQL_LEERPORARGUMENTO);
+            ps.setInt(1, key.hashCode());
+        } catch (SQLException e) {
+            e.getMessage();
+        } finally {
+            con.cerrarConexion();
+            if (ps != null && res != null) {
+                try {
+                    ps.close();
+                    res.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(LaboratorioDAO.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        return lab;
     }
 
     @Override
