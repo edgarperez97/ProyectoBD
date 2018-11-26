@@ -13,9 +13,9 @@ public class Sucursal {
     private int idEstadoSuc;
     private int idPaisSuc;
     private int idCodPostalSuc;
-    private int telefonoSuc;
+    private String telefonoSuc;
 
-    public Sucursal(int idSucursal, String nombreSucl, String direccionSuc, int idMunicipioSuc, int idEstadoSuc, int idPaisSuc, int idCodPostalSuc, int telefonoSuc) {
+    public Sucursal(int idSucursal, String nombreSucl, String direccionSuc, int idMunicipioSuc, int idEstadoSuc, int idPaisSuc, int idCodPostalSuc, String telefonoSuc) {
         this.idSucursal = idSucursal;
         this.nombreSucl = nombreSucl;
         this.direccionSuc = direccionSuc;
@@ -82,11 +82,11 @@ public class Sucursal {
         this.idCodPostalSuc = idCodPostalSuc;
     }
 
-    public int getTelefonoSuc() {
+    public String getTelefonoSuc() {
         return telefonoSuc;
     }
 
-    public void setTelefonoSuc(int telefonoSuc) {
+    public void setTelefonoSuc(String telefonoSuc) {
         this.telefonoSuc = telefonoSuc;
     }
 

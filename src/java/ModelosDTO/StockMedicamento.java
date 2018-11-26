@@ -1,5 +1,7 @@
 package ModelosDTO;
 
+import java.util.Date;
+
 /**
  *
  * @author edgar
@@ -9,12 +11,12 @@ public class StockMedicamento {
     private int idMedicamento;
     private int idSucStockMed;
     private int unidadeskExistencia;
-    private String fechaUltimaCompra;
+    private Date fechaUltimaCompra;
     private int unidadesCompradas;
     private int unidadesVendidas;
-    private String fechaUltimaVenta;
+    private Date fechaUltimaVenta;
 
-    public StockMedicamento(int idMedicamento, int idSucStockMed, int unidadeskExistencia, String fechaUltimaCompra, int unidadesCompradas, int unidadesVendidas, String fechaUltimaVenta) {
+    public StockMedicamento(int idMedicamento, int idSucStockMed, int unidadeskExistencia, Date fechaUltimaCompra, int unidadesCompradas, int unidadesVendidas, Date fechaUltimaVenta) {
         this.idMedicamento = idMedicamento;
         this.idSucStockMed = idSucStockMed;
         this.unidadeskExistencia = unidadeskExistencia;
@@ -48,11 +50,11 @@ public class StockMedicamento {
         this.unidadeskExistencia = unidadeskExistencia;
     }
 
-    public String getFechaUltimaCompra() {
+    public Date getFechaUltimaCompra() {
         return fechaUltimaCompra;
     }
 
-    public void setFechaUltimaCompra(String fechaUltimaCompra) {
+    public void setFechaUltimaCompra(Date fechaUltimaCompra) {
         this.fechaUltimaCompra = fechaUltimaCompra;
     }
 
@@ -72,11 +74,11 @@ public class StockMedicamento {
         this.unidadesVendidas = unidadesVendidas;
     }
 
-    public String getFechaUltimaVenta() {
+    public Date getFechaUltimaVenta() {
         return fechaUltimaVenta;
     }
 
-    public void setFechaUltimaVenta(String fechaUltimaVenta) {
+    public void setFechaUltimaVenta(Date fechaUltimaVenta) {
         this.fechaUltimaVenta = fechaUltimaVenta;
     }
 

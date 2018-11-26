@@ -1,5 +1,7 @@
 package ModelosDTO;
 
+import java.math.BigDecimal;
+
 /**
  *
  * @author edgar
@@ -8,10 +10,10 @@ public class PagoTarjetaCredito {
 
     private int idPagoTarjetaCredito;
     private int idCliente2;
-    private int numeroTarjeta;
-    private int montoCredito;
+    private String numeroTarjeta;
+    private BigDecimal montoCredito;
 
-    public PagoTarjetaCredito(int idPagoTarjetaCredito, int idCliente2, int numeroTarjeta, int montoCredito) {
+    public PagoTarjetaCredito(int idPagoTarjetaCredito, int idCliente2, String numeroTarjeta, BigDecimal montoCredito) {
         this.idPagoTarjetaCredito = idPagoTarjetaCredito;
         this.idCliente2 = idCliente2;
         this.numeroTarjeta = numeroTarjeta;
@@ -34,19 +36,19 @@ public class PagoTarjetaCredito {
         this.idCliente2 = idCliente2;
     }
 
-    public int getNumeroTarjeta() {
+    public String getNumeroTarjeta() {
         return numeroTarjeta;
     }
 
-    public void setNumeroTarjeta(int numeroTarjeta) {
+    public void setNumeroTarjeta(String numeroTarjeta) {
         this.numeroTarjeta = numeroTarjeta;
     }
 
-    public int getMontoCredito() {
+    public BigDecimal getMontoCredito() {
         return montoCredito;
     }
 
-    public void setMontoCredito(int montoCredito) {
+    public void setMontoCredito(BigDecimal montoCredito) {
         this.montoCredito = montoCredito;
     }
 

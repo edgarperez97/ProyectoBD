@@ -15,11 +15,11 @@ public class Empleado {
     private int idMunicipioEmp;
     private int idEstadoEmp;
     private int idCodigoPostal;
-    private int telefonoEmp;
+    private String telefonoEmp;
     private int idTipoEmp;
     private int idSucursalEmp;
 
-    public Empleado(int idEmpleado, String nombreEmpleado, String apellidoPaternoEmp, String apellidoMaternoEmp, int edadEmp, String direccionEmp, int idMunicipioEmp, int idEstadoEmp, int idCodigoPostal, int telefonoEmp, int idTipoEmp, int idSucursalEmp) {
+    public Empleado(int idEmpleado, String nombreEmpleado, String apellidoPaternoEmp, String apellidoMaternoEmp, int edadEmp, String direccionEmp, int idMunicipioEmp, int idEstadoEmp, int idCodigoPostal, String telefonoEmp, int idTipoEmp, int idSucursalEmp) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;
         this.apellidoPaternoEmp = apellidoPaternoEmp;
@@ -106,11 +106,11 @@ public class Empleado {
         this.idCodigoPostal = idCodigoPostal;
     }
 
-    public int getTelefonoEmp() {
+    public String getTelefonoEmp() {
         return telefonoEmp;
     }
 
-    public void setTelefonoEmp(int telefonoEmp) {
+    public void setTelefonoEmp(String telefonoEmp) {
         this.telefonoEmp = telefonoEmp;
     }
 

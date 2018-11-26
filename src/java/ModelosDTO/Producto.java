@@ -1,5 +1,8 @@
 package ModelosDTO;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
  *
  * @author edgar
@@ -8,13 +11,13 @@ public class Producto {
 
     private int idProducto;
     private String nombreProducto;
-    private int precioVenta;
-    private int precioCompra;
-    private String fechaCaducidad;
+    private BigDecimal precioVenta;
+    private BigDecimal precioCompra;
+    private Date fechaCaducidad;
     private int idTipoProd1;
     private int idProveedorProd;
 
-    public Producto(int idProducto, String nombreProducto, int precioVenta, int precioCompra, String fechaCaducidad, int idTipoProd1, int idProveedorProd) {
+    public Producto(int idProducto, String nombreProducto, BigDecimal precioVenta, BigDecimal precioCompra, Date fechaCaducidad, int idTipoProd1, int idProveedorProd) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.precioVenta = precioVenta;
@@ -40,27 +43,27 @@ public class Producto {
         this.nombreProducto = nombreProducto;
     }
 
-    public int getPrecioVenta() {
+    public BigDecimal getPrecioVenta() {
         return precioVenta;
     }
 
-    public void setPrecioVenta(int precioVenta) {
+    public void setPrecioVenta(BigDecimal precioVenta) {
         this.precioVenta = precioVenta;
     }
 
-    public int getPrecioCompra() {
+    public BigDecimal getPrecioCompra() {
         return precioCompra;
     }
 
-    public void setPrecioCompra(int precioCompra) {
+    public void setPrecioCompra(BigDecimal precioCompra) {
         this.precioCompra = precioCompra;
     }
 
-    public String getFechaCaducidad() {
+    public Date getFechaCaducidad() {
         return fechaCaducidad;
     }
 
-    public void setFechaCaducidad(String fechaCaducidad) {
+    public void setFechaCaducidad(Date fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
 

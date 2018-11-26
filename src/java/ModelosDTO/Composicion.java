@@ -8,9 +8,9 @@ public class Composicion {
 
     private int idComposicion;
     private String sustanciaActiva;
-    private double miligramos;
+    private String miligramos;
 
-    public Composicion(int idComposicion, String sustanciaActiva, double miligramos) {
+    public Composicion(int idComposicion, String sustanciaActiva, String miligramos) {
         this.idComposicion = idComposicion;
         this.sustanciaActiva = sustanciaActiva;
         this.miligramos = miligramos;
@@ -32,11 +32,11 @@ public class Composicion {
         this.sustanciaActiva = sustanciaActiva;
     }
 
-    public double getMiligramos() {
+    public String getMiligramos() {
         return miligramos;
     }
 
-    public void setMiligramos(double miligramos) {
+    public void setMiligramos(String miligramos) {
         this.miligramos = miligramos;
     }
 

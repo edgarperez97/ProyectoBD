@@ -1,5 +1,8 @@
 package ModelosDTO;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
  *
  * @author edgar
@@ -15,10 +18,10 @@ public class OrdenDeVenta {
     private int idTipoPagoOrdenVenta;
     private int idPagoTarjetaCredito;
     private int idPagoTarjetaDebito;
-    private int monto;
-    private String fechaOrdenVenta;
+    private BigDecimal monto;
+    private Date fechaOrdenVenta;
 
-    public OrdenDeVenta(int idOrdenVenta, int idSucursalOrdenVenta, int empleadoOrdenVenta, int idClienteOrdenVenta, int idMedicamentoOrdenVenta, int idProductoOrdenVenta, int idTipoPagoOrdenVenta, int idPagoTarjetaCredito, int idPagoTarjetaDebito, int monto, String fechaOrdenVenta) {
+    public OrdenDeVenta(int idOrdenVenta, int idSucursalOrdenVenta, int empleadoOrdenVenta, int idClienteOrdenVenta, int idMedicamentoOrdenVenta, int idProductoOrdenVenta, int idTipoPagoOrdenVenta, int idPagoTarjetaCredito, int idPagoTarjetaDebito, BigDecimal monto, Date fechaOrdenVenta2) {
         this.idOrdenVenta = idOrdenVenta;
         this.idSucursalOrdenVenta = idSucursalOrdenVenta;
         this.empleadoOrdenVenta = empleadoOrdenVenta;
@@ -29,7 +32,7 @@ public class OrdenDeVenta {
         this.idPagoTarjetaCredito = idPagoTarjetaCredito;
         this.idPagoTarjetaDebito = idPagoTarjetaDebito;
         this.monto = monto;
-        this.fechaOrdenVenta = fechaOrdenVenta;
+        this.fechaOrdenVenta = fechaOrdenVenta2;
     }
 
     public int getIdOrdenVenta() {
@@ -104,20 +107,20 @@ public class OrdenDeVenta {
         this.idPagoTarjetaDebito = idPagoTarjetaDebito;
     }
 
-    public int getMonto() {
+    public BigDecimal getMonto() {
         return monto;
     }
 
-    public void setMonto(int monto) {
+    public void setMonto(BigDecimal monto) {
         this.monto = monto;
     }
 
-    public String getFechaOrdenVenta() {
+    public Date getFechaOrdenVenta() {
         return fechaOrdenVenta;
     }
 
-    public void setFechaOrdenVenta(String fechaOrdenVenta) {
-        this.fechaOrdenVenta = fechaOrdenVenta;
+    public void setFechaOrdenVenta2(Date fechaOrdenVenta2) {
+        this.fechaOrdenVenta = fechaOrdenVenta2;
     }
 
 }
