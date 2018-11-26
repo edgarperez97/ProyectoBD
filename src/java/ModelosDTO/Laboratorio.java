@@ -7,11 +7,11 @@ package ModelosDTO;
 public class Laboratorio {
 
     private int idLaboratorio;
-    private String nombre;
+    private String nombreLaboraorio;
 
-    public Laboratorio(int idLaboratorio, String nombre) {
+    public Laboratorio(int idLaboratorio, String nombreLaboraorio) {
         this.idLaboratorio = idLaboratorio;
-        this.nombre = nombre;
+        this.nombreLaboraorio = nombreLaboraorio;
     }
 
     public int getIdLaboratorio() {
@@ -22,12 +22,12 @@ public class Laboratorio {
         this.idLaboratorio = idLaboratorio;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreLaboraorio() {
+        return nombreLaboraorio;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreLaboraorio(String nombreLaboraorio) {
+        this.nombreLaboraorio = nombreLaboraorio;
     }
 
 }

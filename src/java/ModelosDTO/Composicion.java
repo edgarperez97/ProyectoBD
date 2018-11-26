@@ -7,11 +7,13 @@ package ModelosDTO;
 public class Composicion {
 
     private int idComposicion;
-    private String nombre;
+    private String sustanciaActiva;
+    private double miligramos;
 
-    public Composicion(int idComposicion, String nombre) {
+    public Composicion(int idComposicion, String sustanciaActiva, double miligramos) {
         this.idComposicion = idComposicion;
-        this.nombre = nombre;
+        this.sustanciaActiva = sustanciaActiva;
+        this.miligramos = miligramos;
     }
 
     public int getIdComposicion() {
@@ -22,12 +24,20 @@ public class Composicion {
         this.idComposicion = idComposicion;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getSustanciaActiva() {
+        return sustanciaActiva;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setSustanciaActiva(String sustanciaActiva) {
+        this.sustanciaActiva = sustanciaActiva;
+    }
+
+    public double getMiligramos() {
+        return miligramos;
+    }
+
+    public void setMiligramos(double miligramos) {
+        this.miligramos = miligramos;
     }
 
 }

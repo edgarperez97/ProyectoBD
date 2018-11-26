@@ -15,7 +15,7 @@ public class Conexion {
     public static Conexion instance;
     private Connection conexion;
     private final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private String bd = "ProyectoFarmacia";
+    private String bd = "FarmaciaPIA";
     private final String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName="+bd+";";
     private final String USER = "usuarioSQL";
     private final String PASS = "toor";

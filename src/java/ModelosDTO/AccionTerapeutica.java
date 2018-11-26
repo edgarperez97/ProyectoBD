@@ -7,11 +7,11 @@ package ModelosDTO;
 public class AccionTerapeutica {
 
     private int idAccionTerapeutica;
-    private String nombre;
+    private String descripcion;
 
-    public AccionTerapeutica(int idAccionTerapeutica, String nombre) {
+    public AccionTerapeutica(int idAccionTerapeutica, String descripcion) {
         this.idAccionTerapeutica = idAccionTerapeutica;
-        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
     public int getIdAccionTerapeutica() {
@@ -22,12 +22,12 @@ public class AccionTerapeutica {
         this.idAccionTerapeutica = idAccionTerapeutica;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
 }
