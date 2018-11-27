@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img\icono_farmacia2.jpg">
+
+        <title>Farmacia</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css\bootstrap.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Barra de navegacion -->
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">Farmacia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agregarEmpleados.html">Empleados</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Empleados
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Modificar</a>
+                          <a class="dropdown-item" href="#">Eliminar</a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="login.html">Login/ Sign Up</a>
+        </nav>
+        <!-- Fin de la barra de navegacion -->
+
+        <main role="main" class="container">
+            <div class="jumbotron">
+                <h1>Farmacia Patito</h1>
+                <p class="lead">mision y vision de la empresa</p>
+                <a class="btn btn-lg btn-primary" href="agregarMedicamentos.html" role="button">Agregar Medicamento&raquo;</a>
+            </div>
+            <form class="form-inline mt-2 mt-md-0" action="">
+                <input class="form-control mr-sm-2" type="text" placeholder="Busqueda Medicamento" id="IdMedicamento" 
+                    aria-label="Busqueda">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="boton_busqueda">Buscar</button>
+            </form>
+        </main>
+
+        <!-- Bootstrap core JavaScript-->
+        <script type="text/javascript" src="js\jquery-3.3.1.min.js"></script>
+    </body>
+</html>

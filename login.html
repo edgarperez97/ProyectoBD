@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+     <!-- Bootstrap core CSS -->
+        <link href="css\bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+        <!-- Barra de navegacion -->
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">Farmacia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agregarEmpleados.html">Empleados</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Empleados
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Modificar</a>
+                          <a class="dropdown-item" href="#">Eliminar</a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="login.html">Login/ Sign Up</a>
+        </nav>
+        <!-- Fin de la barra de navegacion -->
+
+        <!-- login form -->
+
+  <div class="form-structor">
+	<div class="signup">
+		<h2 class="form-title" id="signup"><span></span>Registrate</h2>
+		<div class="form-holder">
+			<input type="text" class="input" placeholder="Nombre" />
+			<input type="email" class="input" placeholder="Email" />
+			<input type="password" class="input" placeholder="Contraseña" />
+		</div>
+		<button class="submit-btn">Registrarse</button>
+	</div>
+	<div class="login slide-up">
+		<div class="center">
+			<h2 class="form-title" id="login"><span></span>Ingresar</h2>
+			<div class="form-holder">
+				<input type="email" class="input" placeholder="Email" />
+				<input type="password" class="input" placeholder="Contraseña" />
+			</div>
+			<button class="submit-btn">Ingresar</button>
+		</div>
+	</div>
+</div>
+ <script  src="js/login.js"></script>
+</body>
+
+</html>
