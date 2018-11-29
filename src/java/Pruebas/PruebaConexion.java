@@ -21,8 +21,9 @@ public class PruebaConexion {
             String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
 
             con = DriverManager.getConnection(URL);
-
-            System.out.println("nos conectamos");
+            
+            if (con != null){
+            System.out.println("nos conectamos");}
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(PruebaConexion.class.getName()).log(Level.SEVERE, null, ex);
