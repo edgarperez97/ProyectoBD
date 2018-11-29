@@ -12,14 +12,14 @@ public class Empleado {
     private String apellidoMaternoEmp;
     private int edadEmp;
     private String direccionEmp;
-    private int idMunicipioEmp;
-    private int idEstadoEmp;
-    private int idCodigoPostal;
+    private String idMunicipioEmp;
+    private String idEstadoEmp;
+    private String idCodigoPostal;
     private String telefonoEmp;
     private int idTipoEmp;
     private int idSucursalEmp;
 
-    public Empleado(int idEmpleado, String nombreEmpleado, String apellidoPaternoEmp, String apellidoMaternoEmp, int edadEmp, String direccionEmp, int idMunicipioEmp, int idEstadoEmp, int idCodigoPostal, String telefonoEmp, int idTipoEmp, int idSucursalEmp) {
+    public Empleado(int idEmpleado, String nombreEmpleado, String apellidoPaternoEmp, String apellidoMaternoEmp, int edadEmp, String direccionEmp, String idMunicipioEmp, String idEstadoEmp, String idCodigoPostal, String telefonoEmp, int idTipoEmp, int idSucursalEmp) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;
         this.apellidoPaternoEmp = apellidoPaternoEmp;
@@ -82,27 +82,27 @@ public class Empleado {
         this.direccionEmp = direccionEmp;
     }
 
-    public int getIdMunicipioEmp() {
+    public String getIdMunicipioEmp() {
         return idMunicipioEmp;
     }
 
-    public void setIdMunicipioEmp(int idMunicipioEmp) {
+    public void setIdMunicipioEmp(String idMunicipioEmp) {
         this.idMunicipioEmp = idMunicipioEmp;
     }
 
-    public int getIdEstadoEmp() {
+    public String getIdEstadoEmp() {
         return idEstadoEmp;
     }
 
-    public void setIdEstadoEmp(int idEstadoEmp) {
+    public void setIdEstadoEmp(String idEstadoEmp) {
         this.idEstadoEmp = idEstadoEmp;
     }
 
-    public int getIdCodigoPostal() {
+    public String getIdCodigoPostal() {
         return idCodigoPostal;
     }
 
-    public void setIdCodigoPostal(int idCodigoPostal) {
+    public void setIdCodigoPostal(String idCodigoPostal) {
         this.idCodigoPostal = idCodigoPostal;
     }
 

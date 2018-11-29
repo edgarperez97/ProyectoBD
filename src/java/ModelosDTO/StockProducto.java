@@ -13,17 +13,15 @@ public class StockProducto {
     private int idProdStock;
     private int unidadesExistencia;
     private Date fechaUltimaCompra;
-    private int unidadesCompradas;
     private int unidadesVendidas;
     private Date fechaUltimaVenta;
 
-    public StockProducto(int idStockProducto, int idSucStockProd, int idProdStock, int unidadesExistencia, Date fechaUltimaCompra, int unidadesCompradas, int unidadesVendidas, Date fechaUltimaVenta) {
+    public StockProducto(int idStockProducto, int idSucStockProd, int idProdStock, int unidadesExistencia, Date fechaUltimaCompra, int unidadesVendidas, Date fechaUltimaVenta) {
         this.idStockProducto = idStockProducto;
         this.idSucStockProd = idSucStockProd;
         this.idProdStock = idProdStock;
         this.unidadesExistencia = unidadesExistencia;
         this.fechaUltimaCompra = fechaUltimaCompra;
-        this.unidadesCompradas = unidadesCompradas;
         this.unidadesVendidas = unidadesVendidas;
         this.fechaUltimaVenta = fechaUltimaVenta;
     }
@@ -66,14 +64,6 @@ public class StockProducto {
 
     public void setFechaUltimaCompra(Date fechaUltimaCompra) {
         this.fechaUltimaCompra = fechaUltimaCompra;
-    }
-
-    public int getUnidadesCompradas() {
-        return unidadesCompradas;
-    }
-
-    public void setUnidadesCompradas(int unidadesCompradas) {
-        this.unidadesCompradas = unidadesCompradas;
     }
 
     public int getUnidadesVendidas() {

@@ -1,6 +1,5 @@
 package ModelosDTO;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -10,29 +9,31 @@ import java.util.Date;
 public class OrdenDeVenta {
 
     private int idOrdenVenta;
-    private int idSucursalOrdenVenta;
-    private int empleadoOrdenVenta;
-    private int idClienteOrdenVenta;
-    private int idMedicamentoOrdenVenta;
-    private int idProductoOrdenVenta;
-    private int idTipoPagoOrdenVenta;
-    private int idPagoTarjetaCredito;
-    private int idPagoTarjetaDebito;
-    private BigDecimal monto;
     private Date fechaOrdenVenta;
+    private int idSucOrdenVenta;
+    private int idEmpOrdenVenta;
+    private int idCliOrdenVenta;
+    private int idMedicaOrdenVenta;
+    private int idProdOrdenVenta;
+    private int idTipoPagoOrdenVenta;
+    private int idTarjCred;
+    private int idTarjDeb;
+    private float monto;
+    private float totalConIVA;
 
-    public OrdenDeVenta(int idOrdenVenta, int idSucursalOrdenVenta, int empleadoOrdenVenta, int idClienteOrdenVenta, int idMedicamentoOrdenVenta, int idProductoOrdenVenta, int idTipoPagoOrdenVenta, int idPagoTarjetaCredito, int idPagoTarjetaDebito, BigDecimal monto, Date fechaOrdenVenta2) {
+    public OrdenDeVenta(int idOrdenVenta, Date fechaOrdenVenta, int idSucOrdenVenta, int idEmpOrdenVenta, int idCliOrdenVenta, int idMedicaOrdenVenta, int idProdOrdenVenta, int idTipoPagoOrdenVenta, int idTarjCred, int idTarjDeb, float monto, float totalConIVA) {
         this.idOrdenVenta = idOrdenVenta;
-        this.idSucursalOrdenVenta = idSucursalOrdenVenta;
-        this.empleadoOrdenVenta = empleadoOrdenVenta;
-        this.idClienteOrdenVenta = idClienteOrdenVenta;
-        this.idMedicamentoOrdenVenta = idMedicamentoOrdenVenta;
-        this.idProductoOrdenVenta = idProductoOrdenVenta;
+        this.fechaOrdenVenta = fechaOrdenVenta;
+        this.idSucOrdenVenta = idSucOrdenVenta;
+        this.idEmpOrdenVenta = idEmpOrdenVenta;
+        this.idCliOrdenVenta = idCliOrdenVenta;
+        this.idMedicaOrdenVenta = idMedicaOrdenVenta;
+        this.idProdOrdenVenta = idProdOrdenVenta;
         this.idTipoPagoOrdenVenta = idTipoPagoOrdenVenta;
-        this.idPagoTarjetaCredito = idPagoTarjetaCredito;
-        this.idPagoTarjetaDebito = idPagoTarjetaDebito;
+        this.idTarjCred = idTarjCred;
+        this.idTarjDeb = idTarjDeb;
         this.monto = monto;
-        this.fechaOrdenVenta = fechaOrdenVenta2;
+        this.totalConIVA = totalConIVA;
     }
 
     public int getIdOrdenVenta() {
@@ -43,44 +44,52 @@ public class OrdenDeVenta {
         this.idOrdenVenta = idOrdenVenta;
     }
 
-    public int getIdSucursalOrdenVenta() {
-        return idSucursalOrdenVenta;
+    public Date getFechaOrdenVenta() {
+        return fechaOrdenVenta;
     }
 
-    public void setIdSucursalOrdenVenta(int idSucursalOrdenVenta) {
-        this.idSucursalOrdenVenta = idSucursalOrdenVenta;
+    public void setFechaOrdenVenta(Date fechaOrdenVenta) {
+        this.fechaOrdenVenta = fechaOrdenVenta;
     }
 
-    public int getEmpleadoOrdenVenta() {
-        return empleadoOrdenVenta;
+    public int getIdSucOrdenVenta() {
+        return idSucOrdenVenta;
     }
 
-    public void setEmpleadoOrdenVenta(int empleadoOrdenVenta) {
-        this.empleadoOrdenVenta = empleadoOrdenVenta;
+    public void setIdSucOrdenVenta(int idSucOrdenVenta) {
+        this.idSucOrdenVenta = idSucOrdenVenta;
     }
 
-    public int getIdClienteOrdenVenta() {
-        return idClienteOrdenVenta;
+    public int getIdEmpOrdenVenta() {
+        return idEmpOrdenVenta;
     }
 
-    public void setIdClienteOrdenVenta(int idClienteOrdenVenta) {
-        this.idClienteOrdenVenta = idClienteOrdenVenta;
+    public void setIdEmpOrdenVenta(int idEmpOrdenVenta) {
+        this.idEmpOrdenVenta = idEmpOrdenVenta;
     }
 
-    public int getIdMedicamentoOrdenVenta() {
-        return idMedicamentoOrdenVenta;
+    public int getIdCliOrdenVenta() {
+        return idCliOrdenVenta;
     }
 
-    public void setIdMedicamentoOrdenVenta(int idMedicamentoOrdenVenta) {
-        this.idMedicamentoOrdenVenta = idMedicamentoOrdenVenta;
+    public void setIdCliOrdenVenta(int idCliOrdenVenta) {
+        this.idCliOrdenVenta = idCliOrdenVenta;
     }
 
-    public int getIdProductoOrdenVenta() {
-        return idProductoOrdenVenta;
+    public int getIdMedicaOrdenVenta() {
+        return idMedicaOrdenVenta;
     }
 
-    public void setIdProductoOrdenVenta(int idProductoOrdenVenta) {
-        this.idProductoOrdenVenta = idProductoOrdenVenta;
+    public void setIdMedicaOrdenVenta(int idMedicaOrdenVenta) {
+        this.idMedicaOrdenVenta = idMedicaOrdenVenta;
+    }
+
+    public int getIdProdOrdenVenta() {
+        return idProdOrdenVenta;
+    }
+
+    public void setIdProdOrdenVenta(int idProdOrdenVenta) {
+        this.idProdOrdenVenta = idProdOrdenVenta;
     }
 
     public int getIdTipoPagoOrdenVenta() {
@@ -91,36 +100,36 @@ public class OrdenDeVenta {
         this.idTipoPagoOrdenVenta = idTipoPagoOrdenVenta;
     }
 
-    public int getIdPagoTarjetaCredito() {
-        return idPagoTarjetaCredito;
+    public int getIdTarjCred() {
+        return idTarjCred;
     }
 
-    public void setIdPagoTarjetaCredito(int idPagoTarjetaCredito) {
-        this.idPagoTarjetaCredito = idPagoTarjetaCredito;
+    public void setIdTarjCred(int idTarjCred) {
+        this.idTarjCred = idTarjCred;
     }
 
-    public int getIdPagoTarjetaDebito() {
-        return idPagoTarjetaDebito;
+    public int getIdTarjDeb() {
+        return idTarjDeb;
     }
 
-    public void setIdPagoTarjetaDebito(int idPagoTarjetaDebito) {
-        this.idPagoTarjetaDebito = idPagoTarjetaDebito;
+    public void setIdTarjDeb(int idTarjDeb) {
+        this.idTarjDeb = idTarjDeb;
     }
 
-    public BigDecimal getMonto() {
+    public float getMonto() {
         return monto;
     }
 
-    public void setMonto(BigDecimal monto) {
+    public void setMonto(float monto) {
         this.monto = monto;
     }
 
-    public Date getFechaOrdenVenta() {
-        return fechaOrdenVenta;
+    public float getTotalConIVA() {
+        return totalConIVA;
     }
 
-    public void setFechaOrdenVenta2(Date fechaOrdenVenta2) {
-        this.fechaOrdenVenta = fechaOrdenVenta2;
+    public void setTotalConIVA(float totalConIVA) {
+        this.totalConIVA = totalConIVA;
     }
 
 }

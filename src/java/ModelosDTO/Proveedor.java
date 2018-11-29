@@ -12,22 +12,22 @@ public class Proveedor {
     private String apelliM;
     private int edadProv;
     private String direccion;
-    private int idMunicipioProv;
-    private int idEstadoProv;
-    private int idCodPosProv;
-    private String telefono;
+    private String nomMuniProv;
+    private String nomEstProv;
+    private String codPostProv;
+    private String telefonoProv;
 
-    public Proveedor(int idProveedor, String nombreProv, String apelliP, String apelliM, int edadProv, String direccion, int idMunicipioProv, int idEstadoProv, int idCodPosProv, String telefono) {
+    public Proveedor(int idProveedor, String nombreProv, String apelliP, String apelliM, int edadProv, String direccion, String nomMuniProv, String nomEstProv, String codPostProv, String telefonoProv) {
         this.idProveedor = idProveedor;
         this.nombreProv = nombreProv;
         this.apelliP = apelliP;
         this.apelliM = apelliM;
         this.edadProv = edadProv;
         this.direccion = direccion;
-        this.idMunicipioProv = idMunicipioProv;
-        this.idEstadoProv = idEstadoProv;
-        this.idCodPosProv = idCodPosProv;
-        this.telefono = telefono;
+        this.nomMuniProv = nomMuniProv;
+        this.nomEstProv = nomEstProv;
+        this.codPostProv = codPostProv;
+        this.telefonoProv = telefonoProv;
     }
 
     public int getIdProveedor() {
@@ -78,36 +78,36 @@ public class Proveedor {
         this.direccion = direccion;
     }
 
-    public int getIdMunicipioProv() {
-        return idMunicipioProv;
+    public String getNomMuniProv() {
+        return nomMuniProv;
     }
 
-    public void setIdMunicipioProv(int idMunicipioProv) {
-        this.idMunicipioProv = idMunicipioProv;
+    public void setNomMuniProv(String nomMuniProv) {
+        this.nomMuniProv = nomMuniProv;
     }
 
-    public int getIdEstadoProv() {
-        return idEstadoProv;
+    public String getNomEstProv() {
+        return nomEstProv;
     }
 
-    public void setIdEstadoProv(int idEstadoProv) {
-        this.idEstadoProv = idEstadoProv;
+    public void setNomEstProv(String nomEstProv) {
+        this.nomEstProv = nomEstProv;
     }
 
-    public int getIdCodPosProv() {
-        return idCodPosProv;
+    public String getCodPostProv() {
+        return codPostProv;
     }
 
-    public void setIdCodPosProv(int idCodPosProv) {
-        this.idCodPosProv = idCodPosProv;
+    public void setCodPostProv(String codPostProv) {
+        this.codPostProv = codPostProv;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getTelefonoProv() {
+        return telefonoProv;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setTelefonoProv(String telefonoProv) {
+        this.telefonoProv = telefonoProv;
     }
 
 }

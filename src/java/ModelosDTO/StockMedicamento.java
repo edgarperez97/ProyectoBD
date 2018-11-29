@@ -14,9 +14,9 @@ public class StockMedicamento {
     private Date fechaUltimaCompra;
     private int unidadesCompradas;
     private int unidadesVendidas;
-    private Date fechaUltimaVenta;
+    private String fechaUltimaVenta;
 
-    public StockMedicamento(int idMedicamento, int idSucStockMed, int unidadeskExistencia, Date fechaUltimaCompra, int unidadesCompradas, int unidadesVendidas, Date fechaUltimaVenta) {
+    public StockMedicamento(int idMedicamento, int idSucStockMed, int unidadeskExistencia, Date fechaUltimaCompra, int unidadesCompradas, int unidadesVendidas, String fechaUltimaVenta) {
         this.idMedicamento = idMedicamento;
         this.idSucStockMed = idSucStockMed;
         this.unidadeskExistencia = unidadeskExistencia;
@@ -74,11 +74,11 @@ public class StockMedicamento {
         this.unidadesVendidas = unidadesVendidas;
     }
 
-    public Date getFechaUltimaVenta() {
+    public String getFechaUltimaVenta() {
         return fechaUltimaVenta;
     }
 
-    public void setFechaUltimaVenta(Date fechaUltimaVenta) {
+    public void setFechaUltimaVenta(String fechaUltimaVenta) {
         this.fechaUltimaVenta = fechaUltimaVenta;
     }
 

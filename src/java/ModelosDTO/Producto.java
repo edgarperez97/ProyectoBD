@@ -1,6 +1,5 @@
 package ModelosDTO;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -11,13 +10,13 @@ public class Producto {
 
     private int idProducto;
     private String nombreProducto;
-    private BigDecimal precioVenta;
-    private BigDecimal precioCompra;
+    private float precioVenta;
+    private float precioCompra;
     private Date fechaCaducidad;
     private int idTipoProd1;
     private int idProveedorProd;
 
-    public Producto(int idProducto, String nombreProducto, BigDecimal precioVenta, BigDecimal precioCompra, Date fechaCaducidad, int idTipoProd1, int idProveedorProd) {
+    public Producto(int idProducto, String nombreProducto, float precioVenta, float precioCompra, Date fechaCaducidad, int idTipoProd1, int idProveedorProd) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.precioVenta = precioVenta;
@@ -43,19 +42,19 @@ public class Producto {
         this.nombreProducto = nombreProducto;
     }
 
-    public BigDecimal getPrecioVenta() {
+    public float getPrecioVenta() {
         return precioVenta;
     }
 
-    public void setPrecioVenta(BigDecimal precioVenta) {
+    public void setPrecioVenta(float precioVenta) {
         this.precioVenta = precioVenta;
     }
 
-    public BigDecimal getPrecioCompra() {
+    public float getPrecioCompra() {
         return precioCompra;
     }
 
-    public void setPrecioCompra(BigDecimal precioCompra) {
+    public void setPrecioCompra(float precioCompra) {
         this.precioCompra = precioCompra;
     }
 

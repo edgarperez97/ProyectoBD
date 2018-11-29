@@ -6,20 +6,10 @@ package ModelosDTO;
  */
 public class CodigoPostal {
 
-    private int idCodPos;
     private int codigoPostal;
 
-    public CodigoPostal(int idCodPos, int codigoPostal) {
-        this.idCodPos = idCodPos;
+    public CodigoPostal(int codigoPostal) {
         this.codigoPostal = codigoPostal;
-    }
-
-    public int getIdCodPos() {
-        return idCodPos;
-    }
-
-    public void setIdCodPos(int idCodPos) {
-        this.idCodPos = idCodPos;
     }
 
     public int getCodigoPostal() {

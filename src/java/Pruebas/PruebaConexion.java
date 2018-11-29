@@ -17,10 +17,9 @@ public class PruebaConexion {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=ProyectoFarmacia;";
-            String user = "usuarioSQL";
-            String pass = "toor";
-            con = DriverManager.getConnection(URL, user, pass);
+            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
+
+            con = DriverManager.getConnection(URL);
 
             System.out.println("nos conectamos");
 

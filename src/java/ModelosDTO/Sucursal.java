@@ -9,20 +9,18 @@ public class Sucursal {
     private int idSucursal;
     private String nombreSucl;
     private String direccionSuc;
-    private int idMunicipioSuc;
-    private int idEstadoSuc;
-    private int idPaisSuc;
-    private int idCodPostalSuc;
+    private String nomMunicipio;
+    private String nomEstado;
+    private String codPostal;
     private String telefonoSuc;
 
-    public Sucursal(int idSucursal, String nombreSucl, String direccionSuc, int idMunicipioSuc, int idEstadoSuc, int idPaisSuc, int idCodPostalSuc, String telefonoSuc) {
+    public Sucursal(int idSucursal, String nombreSucl, String direccionSuc, String nomMunicipio, String nomEstado, String codPostal, String telefonoSuc) {
         this.idSucursal = idSucursal;
         this.nombreSucl = nombreSucl;
         this.direccionSuc = direccionSuc;
-        this.idMunicipioSuc = idMunicipioSuc;
-        this.idEstadoSuc = idEstadoSuc;
-        this.idPaisSuc = idPaisSuc;
-        this.idCodPostalSuc = idCodPostalSuc;
+        this.nomMunicipio = nomMunicipio;
+        this.nomEstado = nomEstado;
+        this.codPostal = codPostal;
         this.telefonoSuc = telefonoSuc;
     }
 
@@ -50,36 +48,28 @@ public class Sucursal {
         this.direccionSuc = direccionSuc;
     }
 
-    public int getIdMunicipioSuc() {
-        return idMunicipioSuc;
+    public String getNomMunicipio() {
+        return nomMunicipio;
     }
 
-    public void setIdMunicipioSuc(int idMunicipioSuc) {
-        this.idMunicipioSuc = idMunicipioSuc;
+    public void setNomMunicipio(String nomMunicipio) {
+        this.nomMunicipio = nomMunicipio;
     }
 
-    public int getIdEstadoSuc() {
-        return idEstadoSuc;
+    public String getNomEstado() {
+        return nomEstado;
     }
 
-    public void setIdEstadoSuc(int idEstadoSuc) {
-        this.idEstadoSuc = idEstadoSuc;
+    public void setNomEstado(String nomEstado) {
+        this.nomEstado = nomEstado;
     }
 
-    public int getIdPaisSuc() {
-        return idPaisSuc;
+    public String getCodPostal() {
+        return codPostal;
     }
 
-    public void setIdPaisSuc(int idPaisSuc) {
-        this.idPaisSuc = idPaisSuc;
-    }
-
-    public int getIdCodPostalSuc() {
-        return idCodPostalSuc;
-    }
-
-    public void setIdCodPostalSuc(int idCodPostalSuc) {
-        this.idCodPostalSuc = idCodPostalSuc;
+    public void setCodPostal(String codPostal) {
+        this.codPostal = codPostal;
     }
 
     public String getTelefonoSuc() {

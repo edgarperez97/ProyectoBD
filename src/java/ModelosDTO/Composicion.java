@@ -6,22 +6,16 @@ package ModelosDTO;
  */
 public class Composicion {
 
-    private int idComposicion;
     private String sustanciaActiva;
     private String miligramos;
+    private String sustancia2;
+    private String miligramos2;
 
-    public Composicion(int idComposicion, String sustanciaActiva, String miligramos) {
-        this.idComposicion = idComposicion;
+    public Composicion(String sustanciaActiva, String miligramos, String sustancia2, String miligramos2) {
         this.sustanciaActiva = sustanciaActiva;
         this.miligramos = miligramos;
-    }
-
-    public int getIdComposicion() {
-        return idComposicion;
-    }
-
-    public void setIdComposicion(int idComposicion) {
-        this.idComposicion = idComposicion;
+        this.sustancia2 = sustancia2;
+        this.miligramos2 = miligramos2;
     }
 
     public String getSustanciaActiva() {
@@ -38,6 +32,22 @@ public class Composicion {
 
     public void setMiligramos(String miligramos) {
         this.miligramos = miligramos;
+    }
+
+    public String getSustancia2() {
+        return sustancia2;
+    }
+
+    public void setSustancia2(String sustancia2) {
+        this.sustancia2 = sustancia2;
+    }
+
+    public String getMiligramos2() {
+        return miligramos2;
+    }
+
+    public void setMiligramos2(String miligramos2) {
+        this.miligramos2 = miligramos2;
     }
 
 }

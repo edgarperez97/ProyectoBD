@@ -6,20 +6,10 @@ package ModelosDTO;
  */
 public class Laboratorio {
 
-    private int idLaboratorio;
     private String nombreLaboraorio;
 
-    public Laboratorio(int idLaboratorio, String nombreLaboraorio) {
-        this.idLaboratorio = idLaboratorio;
+    public Laboratorio(String nombreLaboraorio) {
         this.nombreLaboraorio = nombreLaboraorio;
-    }
-
-    public int getIdLaboratorio() {
-        return idLaboratorio;
-    }
-
-    public void setIdLaboratorio(int idLaboratorio) {
-        this.idLaboratorio = idLaboratorio;
     }
 
     public String getNombreLaboraorio() {

@@ -15,16 +15,13 @@ public class Conexion {
     public static Conexion instance;
     private Connection conexion;
     private final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private String bd = "FarmaciaPIA";
-    private final String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName="+bd+";";
-    private final String USER = "usuarioSQL";
-    private final String PASS = "toor";
 
     private Conexion() {
         try {
-
+            
+            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
             Class.forName(DRIVER);
-            conexion = DriverManager.getConnection(URL, USER, PASS);
+            conexion = DriverManager.getConnection(URL);
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);

@@ -6,28 +6,18 @@ package ModelosDTO;
  */
 public class Municipio {
 
-    private int idMunicipio;
-    private String nombreCiudad;
+    private String nomMunicipio;
 
-    public Municipio(int idMunicipio, String nombreCiudad) {
-        this.idMunicipio = idMunicipio;
-        this.nombreCiudad = nombreCiudad;
+    public Municipio(String nomMunicipio) {
+        this.nomMunicipio = nomMunicipio;
     }
 
-    public int getIdMunicipio() {
-        return idMunicipio;
+    public String getNomMunicipio() {
+        return nomMunicipio;
     }
 
-    public void setIdMunicipio(int idMunicipio) {
-        this.idMunicipio = idMunicipio;
-    }
-
-    public String getNombreCiudad() {
-        return nombreCiudad;
-    }
-
-    public void setNombreCiudad(String nombreCiudad) {
-        this.nombreCiudad = nombreCiudad;
+    public void setNomMunicipio(String nomMunicipio) {
+        this.nomMunicipio = nomMunicipio;
     }
 
 }

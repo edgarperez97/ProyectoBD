@@ -1,7 +1,5 @@
 package ModelosDTO;
 
-import java.math.BigDecimal;
-
 /**
  *
  * @author edgar
@@ -11,9 +9,9 @@ public class PagoTarjetaDebito {
     private int idPagoTarjetaDebito;
     private int idCliente3;
     private String numeroTarjetaDebito;
-    private BigDecimal montoDebito;
+    private float montoDebito;
 
-    public PagoTarjetaDebito(int idPagoTarjetaDebito, int idCliente3, String numeroTarjetaDebito, BigDecimal montoDebito) {
+    public PagoTarjetaDebito(int idPagoTarjetaDebito, int idCliente3, String numeroTarjetaDebito, float montoDebito) {
         this.idPagoTarjetaDebito = idPagoTarjetaDebito;
         this.idCliente3 = idCliente3;
         this.numeroTarjetaDebito = numeroTarjetaDebito;
@@ -44,11 +42,11 @@ public class PagoTarjetaDebito {
         this.numeroTarjetaDebito = numeroTarjetaDebito;
     }
 
-    public BigDecimal getMontoDebito() {
+    public float getMontoDebito() {
         return montoDebito;
     }
 
-    public void setMontoDebito(BigDecimal montoDebito) {
+    public void setMontoDebito(float montoDebito) {
         this.montoDebito = montoDebito;
     }
 

@@ -6,22 +6,12 @@ package ModelosDTO;
  */
 public class Estado {
 
-    private int idEstado;
     private String nombreEstado;
 
-    public Estado(int idEstado, String nombreEstado) {
-        this.idEstado = idEstado;
+    public Estado(String nombreEstado) {
         this.nombreEstado = nombreEstado;
     }
-
-    public int getIdEstado() {
-        return idEstado;
-    }
-
-    public void setIdEstado(int idEstado) {
-        this.idEstado = idEstado;
-    }
-
+    
     public String getNombreEstado() {
         return nombreEstado;
     }
