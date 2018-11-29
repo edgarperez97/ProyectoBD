@@ -13,8 +13,9 @@ import java.util.logging.Logger;
 public class PruebaConexion {
 
     public static void main(String[] args) {
-        Connection con = null;
-        try {
+       
+        try { 
+            Connection con = null;
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
             String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
