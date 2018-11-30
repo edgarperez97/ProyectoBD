@@ -18,7 +18,8 @@ public class PruebaConexion {
             Connection con = null;
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
+//            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
+             String URL = "jdbc:sqlserver://localhost:1433;;database=BDD_PIA";
 
             con = DriverManager.getConnection(URL);
             
