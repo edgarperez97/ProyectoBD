@@ -13,18 +13,16 @@ import java.util.logging.Logger;
 public class PruebaConexion {
 
     public static void main(String[] args) {
-       
-        try { 
+
+        try {
             Connection con = null;
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-//            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
-             String URL = "jdbc:sqlserver://localhost:1433;;database=BDD_PIA";
+            String URL = "jdbc:sqlserver://LAPTOP-LPCKPEBN:1433;databaseName=BDD_PIA;integratedSecurity=true;";
 
             con = DriverManager.getConnection(URL);
-            
-            if (con != null){
-            System.out.println("nos conectamos");}
+
+            System.out.println("nos conectamos");
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(PruebaConexion.class.getName()).log(Level.SEVERE, null, ex);
